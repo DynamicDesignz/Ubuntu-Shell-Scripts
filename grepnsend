@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "    Grep N' Send    "
+
+echo -n "Search Word: "
+read wordup
+echo -n "Enter Log Path: "
+read path
+echo -n "Email Log To: "
+read address
+
+grep $wordup $path.log | ssmtp -s Log Alert $address

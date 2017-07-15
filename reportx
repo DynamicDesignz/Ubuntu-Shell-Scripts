@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ls /var/log/
+echo -n "Log 1: "
+read log1
+echo -n "Log 2: "
+read log2
+echo "Merging Logs to /home/manboy/reportlogX.log"
+cd /var/log/
+sudo cat $log1 > $log2 >> /home/manboy/reportlogX.log
+sudo chown manboy:manboy /home/manboy/reportlogX.log
+sudo gedit /home/manboy/reportlogX.log
+

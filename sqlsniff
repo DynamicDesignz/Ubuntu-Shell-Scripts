@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "SQLSniff"
+read site
+echo "Site Url: "
+
+sudo nmap -p T:1433 -sV $site -oG sql_tcp_scan_results.txt
+sudo nmap -p U:1434 -sU -sV $site -oG sql_udp_scan_results.txt
+sudo nmap -p T:3306 -sU -sV $site -oG myql_tcp_scan_results.txt

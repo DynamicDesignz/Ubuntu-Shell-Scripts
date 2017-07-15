@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "Apache Enable Virtual Host: "
+read virtual
+sudo a2ensite $virtual.com.conf

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "SWAKS Gmail SMTP  From/To Test"
+echo ""
+echo -n "To Email: "
+read tomail
+echo -n "From Mail: "
+read frommail
+
+echo "ENTER GMAIL LOGIN INFOMRATION"
+
+swaks --to $tomail --from $frommail --server smtp.gmail.com:587 -tls -a LOGIN | tee /tmp/swaks.txt && sudo gedit /tmp/swaks.txt
+

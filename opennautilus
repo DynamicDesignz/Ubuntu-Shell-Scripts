@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -n "Open Root Dir-GUI: "
+read path
+sudo nautilus $path
+echo "Opening $path in Root GUI!" 

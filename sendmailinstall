@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo apt-get remove sendmail-base sendmail sendmail-doc sendmail-bin mailutils sendmail-cf sensible-mda
+
+sudo apt-get purge sendmail-base sendmail sendmail-doc sendmail-bin mailutils sendmail-cf sensible-mda
+
+sudo apt-get autoremove
+
+
+
+sudo apt-get install sendmail-base sendmail sendmail-doc sendmail-bin mailutils sendmail-cf sensible-mda
+
+

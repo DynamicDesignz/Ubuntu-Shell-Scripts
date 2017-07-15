@@ -1,0 +1,5 @@
+#!/bin/bash
+
+firefox facebook.com && firefox google.com/voice && firefox gmail.com
+
+

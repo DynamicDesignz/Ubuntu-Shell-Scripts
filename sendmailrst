@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "SENDMAIL CONFIGURATION RESTART"
+
+echo ""
+echo "WARNING: Run genm4config first to make changes to sendmail master config file!"
+echo ""
+echo "Running sendmailconfig with sudo..."
+sudo sendmailconfig
+echo "Restarting Sendmail..."
+sudo /etc/init.d/sendmail restart

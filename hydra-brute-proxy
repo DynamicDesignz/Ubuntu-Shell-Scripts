@@ -1,0 +1,1 @@
+hydra -l admin -P pass.txt http-proxy://192.168.0.1

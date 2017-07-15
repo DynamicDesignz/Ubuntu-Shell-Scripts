@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo apt-get -y install bacula openssh-server fail2ban spamassassin squid3 stunnel4 proftpd-basic at syslog-ng sarg
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "REMOVE: ~$ "
+read text
+echo "REMOVING.. $text"
+sudo apt-get -y remove $text
+echo "REMOVED: $text"

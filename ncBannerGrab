@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read target
+echo "BannerGrab: ~$ "
+
+read startport
+echo "StartPort: $startport"
+read endport
+echo "EndPort: $endport"
+
+echo "" | nc -v -n -w1 $target $startport - $endporn

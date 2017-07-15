@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for i in `grep -i "manboy" /var/log/mail.log | awk '{print $5}'`; do grep -i $i /var/log/mail.log; done

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "SWAKS Email From/To Test"
+echo ""
+echo -n "To Email: "
+read tomail
+echo -n "From Mail: "
+read frommail
+
+swaks --to $tomail --from $frommail | tee /tmp/swaks.txt && sudo gedit /tmp/swaks.txt
+

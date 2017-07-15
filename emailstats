@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Sendmail Statistics..."
+echo -n "Run Command To Email: "
+read cmd
+$cmd >> sendmail -v wacrochester@gmail.com
+
+

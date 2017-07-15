@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "NMAP LIST: ~$ "
+read list
+echo "Ex: /home/pi/nmap.txt"
+echo "SCANNING LIST $list"
+sudo nmap -iL $list 

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Opening Apache Virtual Hosts File"
+
+sudo nano /etc/apache2/sites-enabled/000-default.conf

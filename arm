@@ -1,0 +1,6 @@
+#!/bin/bash
+ 
+echo -n "Arm Script: "
+read text
+echo "ARMED!: $text Script."
+sudo chmod +x $text

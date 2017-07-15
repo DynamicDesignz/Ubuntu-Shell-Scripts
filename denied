@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo -n "Deny: ~$ "
+read deny
+sudo echo "ALL: $deny" >> /etc/hosts.deny
+echo "DENIED $deny"
+echo ""
+cat /etc/hosts.deny

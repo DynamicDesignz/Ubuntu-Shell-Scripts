@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Sendmail Test To: wacrochester@gmail.com"
+read input
+echo " $input " | sendmail -v wacrochester@gmail.com
+echo "Check Your Gmail Account!"
+

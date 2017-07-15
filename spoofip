@@ -1,0 +1,5 @@
+echo Spoof IP Address with Hping2;
+read orgin
+echo "MyIp: "
+read spoof
+hping2 $orgin --udp --spoof $spoof

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Check Apache Start Status"
+systemctl status apache2.service

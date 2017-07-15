@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Network Retart"
+
+sudo /etc/init.d/networking restart

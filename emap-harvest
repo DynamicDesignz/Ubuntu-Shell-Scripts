@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Email Harvest"
+read host
+
+nmap --script=http-email-harvest $host

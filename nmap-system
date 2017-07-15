@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Nmap Host"
+read host
+sudo nmap -ss -A $host

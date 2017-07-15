@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -n "SEARCH: "
+read text
+sudo apt-cache search $text
+

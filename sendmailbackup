@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Sendmail Backup Configs"
+
+sudo cp -v /etc/mail/access /etc/mail/access.db /etc/mail/aliases /etc/mail/sendmail.cf /etc/mail/sendmail.mc /etc/mail/submit.mc /etc/mail/sendmail.conf  /etc/mail/bak
+
+ls -l /etc/mail/bak

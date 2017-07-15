@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Opening Apache Ports Configuration"
+sudo nano /etc/apache2/ports.conf

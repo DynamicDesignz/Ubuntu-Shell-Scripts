@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Sendmail Test Via OpenSSL"
+echo ""
+echo -n "Enter Mail Host: "
+read host
+openssl s_client -connect $host:25 -starttls smtp

